@@ -1,0 +1,13 @@
+<div class="page-container">
+    <ul class="customer-list row">
+        <li class="customer-item col-3 m-3" *ngFor="let customer of (customerList | async)">
+            <div class="cutomer-item-content p-3 pt-5 border bg-light">
+                <button type="button" class="delete-btn" (click)="onDelete(customer)">Delete</button>
+                <a class="edit-link" [routerLink]="['/edit', customer.id]">Edit</a>
+                <h4 class="customer-name">{{customer.firstName}} {{customer.lastName}}</h4>
+                <div>Age: {{customer.age}}</div>
+                <div>Address: {{customer.address}}</div>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,26 @@
+.customer-list {
+    list-style: none;
+    padding: 0;
+    .customer-item {
+        .cutomer-item-content {
+            height: 100%;
+            position: relative;
+            .edit-link {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .delete-btn {
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: none;
+                background: none;
+                color: red;
+            }
+            .customer-name {
+                margin-top: 0;
+            }
+        }
+    }
+}
